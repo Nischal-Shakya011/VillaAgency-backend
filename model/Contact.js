@@ -22,7 +22,6 @@ const ContactSchema = new Schema({
    message:{
     type: String,
    },
-   
 }, {
     timestamps: true,
 });

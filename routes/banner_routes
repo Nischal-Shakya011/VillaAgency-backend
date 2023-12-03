@@ -5,4 +5,4 @@ const {createBanner, getBanner} = require('../controller/banner_controller');
 router.post("/banner", createBanner)
 router.get("/banner", getBanner)
 
-module.exports = router
+module.exports = router 
