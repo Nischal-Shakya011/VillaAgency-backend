@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const cors = require('cors')
 const fileUpload = require('express-fileupload')
 
 const banner_routes = require('./routes/banner_routes')
@@ -13,7 +14,7 @@ require('./config/db')
 app.use(express.json())
 app.use(fileUpload()); //for files
 app.use(express.static('uploads'))
-
+app.use(cors())
 app.use(arrayImage)
  
 app.use('/api', banner_routes)
