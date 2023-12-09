@@ -39,7 +39,7 @@ let get = async(req, res, next)=>{
         next(err)
     }
 }
-let createProperty = async(req, res,next)=>{
+let createProperty = async(req, res, next)=>{
     try{
         let images = [];
         // console.log(req.files);
@@ -76,8 +76,11 @@ else
         next(err);
     }
 }
+
+
 module.exports ={
     get,
     createProperty,
-    fetchSingleProperty
+    fetchSingleProperty,
+  
 }
