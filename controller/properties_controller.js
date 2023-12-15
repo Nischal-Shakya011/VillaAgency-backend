@@ -6,7 +6,7 @@ let get = async(req, res, next)=>{
     try{
     let search_term = req.query.search_term || ""
     let page = parseInt(req.query.page) || 1
-    let per_page = parseInt(req.query.per_page) || 5
+    let per_page = parseInt(req.query.per_page) || 6
     let properties = await Property.aggregate(
         [
             {
