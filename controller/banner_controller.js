@@ -1,7 +1,6 @@
 let Banner = require('../model/Banner')
 const path = require("path")
 
-
 const createBanner = async(req, res, next) =>{
     try{
         let images = [];
